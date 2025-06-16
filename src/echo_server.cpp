@@ -1,3 +1,14 @@
+/**
+* ==================================================
+ *  @file concurrent_echo_server.cpp
+ *  @brief 回显服务器
+ *  @author ywj
+ *  @date 2025-06-16 下午4:17
+ *  @version 1.0
+ *  @copyright Copyright (c) 2025 ywj. All Rights Reserved.
+ * ==================================================
+ */
+
 #include<sys/socket.h>
 #include<unistd.h>
 #include<stdlib.h>

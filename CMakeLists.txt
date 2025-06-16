@@ -28,3 +28,5 @@ add_executable(datetime_client src/datetime_client.cpp)
 add_executable(datetime_server src/datetime_server.cpp)
 add_executable(echo_client src/echo_client.cpp)
 add_executable(echo_server src/echo_server.cpp)
+add_executable(concurrent_echo_server src/concurrent_echo_server.cpp)
+
