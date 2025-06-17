@@ -24,9 +24,9 @@ set(CMAKE_PDB_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/cmake/${CMAKE_BUILD_TYPE})
 # Set the output directory for the cmake files
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(datetime_client src/datetime_client.cpp)
-add_executable(datetime_server src/datetime_server.cpp)
-add_executable(echo_client src/echo_client.cpp)
-add_executable(echo_server src/echo_server.cpp)
-add_executable(concurrent_echo_server src/concurrent_echo_server.cpp)
-
+add_executable(datetime_client src/socket/datetime_client.cpp)
+add_executable(datetime_server src/socket/datetime_server.cpp)
+add_executable(echo_client src/socket/echo_client.cpp)
+add_executable(echo_server src/socket/echo_server.cpp)
+add_executable(concurrent_echo_server src/socket/concurrent_echo_server.cpp)
+add_executable(select_server src/select/single_process_select_echo_server.cpp)
