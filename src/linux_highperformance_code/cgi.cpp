@@ -16,6 +16,8 @@
 #include<stdlib.h>
 #include<time.h>
 #include<signal.h>
+#include<unistd.h>
+#include<sys/uio.h>
 
 // 定义 LOG 宏
 #define LOG(format, ...) \
@@ -91,11 +93,11 @@ int main(int argc,char**argv)
         //udp创建一个同样指向监听套接字的文件描述符
         //需要注意的是第一这里是用clientFd,第二用dup2(clietenFd,STD_FILENO)更好
         dup(clientFd);//1:因为标准输出对应的文件描述符就是1
-        // close(clientFd);
+        close(clientFd);
         while (true)
         {
             char buffer[1024];
-            int nread=recv(clientFd,buffer,sizeof(buffer),0);
+            int nread=recv(STDOUT_FILENO,buffer,sizeof(buffer),0);
             if (nread<0)
             {
                 close(listenFd);
