@@ -45,3 +45,4 @@ add_executable(sendfile_test src/linux_highperformance_code/superiofunction/send
 add_executable(mmap_test src/linux_highperformance_code/superiofunction/mmap_test.cpp)
 add_executable(splice_test src/linux_highperformance_code/superiofunction/splice_test.cpp)
 add_executable(tcp_udp src/linux_highperformance_code/tcp_udp.cpp)
+add_executable(signal_super src/linux_highperformance_code/signal_super.cpp)
