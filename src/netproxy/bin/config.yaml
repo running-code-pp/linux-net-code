@@ -1,0 +1,12 @@
+# config.yaml
+listen:
+  host: 10.194.70.225
+  port: 12345
+
+logical_hosts:
+  - name: 10.194.70.225
+    port: 13579
+    conns: 5
+  - name: 10.194.70.79
+    port: 13579
+    conns: 5

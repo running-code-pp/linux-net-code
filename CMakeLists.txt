@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(unixNet)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_BUILD_TYPE Debug)
@@ -46,3 +46,4 @@ add_executable(mmap_test src/linux_highperformance_code/superiofunction/mmap_tes
 add_executable(splice_test src/linux_highperformance_code/superiofunction/splice_test.cpp)
 add_executable(tcp_udp src/linux_highperformance_code/tcp_udp.cpp)
 add_executable(signal_super src/linux_highperformance_code/signal_super.cpp)
+add_subdirectory(${PROJECT_SOURCE_DIR}/src/netproxy)
