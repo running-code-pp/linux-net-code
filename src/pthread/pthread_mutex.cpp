@@ -19,7 +19,7 @@
 
 int count=0;
 
-pthread_mutex_t counter_mutex;
+pthread_mutex_t counter_mutex = PTHREAD_MUTEX_INITIALIZER;
 //如果这个函数没有返回值可能会造成意想不到的结果
 void* counterFunc(void*arg)
 {
